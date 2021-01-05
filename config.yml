@@ -1,0 +1,109 @@
+baseURL: "https://example.com"
+title: XYZ
+paginate: 8
+theme: hugo-PaperMod
+enableInlineShortcodes: true
+enableRobotsTXT: true
+
+# googleAnalytics: UA-123-45
+
+minify:
+    disableXML: true
+    # minifyOutput: true
+
+languages:
+    en:
+        languageName: "English"
+        weight: 1
+        menu:
+            main:
+                - name: About
+                  url: about/
+                  weight: 5
+                - name: Search
+                  url: search/
+                  weight: 10
+                - name: Tags
+                  url: tags/
+                  weight: 10
+
+    
+outputs:
+    home:
+        - HTML
+        - RSS
+        - JSON
+
+params:
+    env: production
+    description: "Theme PaperMod - https://github.com/adityatelange/hugo-PaperMod"
+    author: Theme PaperMod
+    # author: ["Me", "You"] # multiple authors
+    ShowReadingTime: true
+    defaultTheme: auto
+    ShowShareButtons: true
+    displayFullLangName: true
+    # images: ""
+    # assets:
+    #   favicon: '<path / external url>'
+
+    profileMode:
+        enabled: false
+        title: Welcome
+        imageUrl: "https://media-exp1.licdn.com/dms/image/C510BAQEoa3V14KX8nA/company-logo_200_200/0/1542699510410?e=1617235200&v=beta&t=11ldMVzc1XzOWpxkY2xd2oXL7axHsDO94yqMOlL8s8o"
+        imageTitle: my image
+        # imageWidth: 120
+        # imageHeight: 120
+        buttons:
+            - name: About
+              url: about
+            - name: Tags
+              url: tags
+
+    homeInfoParams:
+        Title: "Hi there \U0001F44B"
+        Content: >
+            Welcome to Moonlit Playground
+
+    socialIcons:
+        - name: twitter
+          url: """
+        # - name: stackoverflow
+        #   url: "#"
+        # - name: codepen
+        #   url: "#"
+        - name: linkedin
+          url: ""
+        - name: github
+          url: ""
+
+taxonomies:
+    category: categories
+    tag: tags
+    series: series
+
+privacy:
+    vimeo:
+        disabled: false
+        simple: true
+
+    twitter:
+        disabled: false
+        enableDNT: true
+        simple: true
+
+    instagram:
+        disabled: false
+        simple: true
+
+    youtube:
+        disabled: false
+        privacyEnhanced: true
+
+services:
+    instagram:
+        disableInlineCSS: true
+    twitter:
+        disableInlineCSS: true
+
+
